@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E38864BB26EA90F100C01195 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38864B926EA90F100C01195 /* EmployeeCell.swift */; };
+		E38864BC26EA90F100C01195 /* EmployeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38864BA26EA90F100C01195 /* EmployeeCell.xib */; };
+		E38864BE26EA9AE500C01195 /* AvitoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38864BD26EA9AE500C01195 /* AvitoManager.swift */; };
 		E394F6B426EA80C400203BC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E394F6B326EA80C400203BC8 /* AppDelegate.swift */; };
 		E394F6B626EA80C400203BC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E394F6B526EA80C400203BC8 /* SceneDelegate.swift */; };
 		E394F6B826EA80C400203BC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E394F6B726EA80C400203BC8 /* ViewController.swift */; };
 		E394F6BB26EA80C400203BC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E394F6B926EA80C400203BC8 /* Main.storyboard */; };
 		E394F6BD26EA80D300203BC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E394F6BC26EA80D300203BC8 /* Assets.xcassets */; };
 		E394F6C026EA80D300203BC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E394F6BE26EA80D300203BC8 /* LaunchScreen.storyboard */; };
+		E394F6CB26EA8BC500203BC8 /* AvitoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E394F6CA26EA8BC500203BC8 /* AvitoModel.swift */; };
+		E394F6CD26EA8D6500203BC8 /* AvitoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E394F6CC26EA8D6500203BC8 /* AvitoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E38864B926EA90F100C01195 /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		E38864BA26EA90F100C01195 /* EmployeeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeCell.xib; sourceTree = "<group>"; };
+		E38864BD26EA9AE500C01195 /* AvitoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvitoManager.swift; sourceTree = "<group>"; };
 		E394F6B026EA80C400203BC8 /* Avito-ios-trainee-problem-2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Avito-ios-trainee-problem-2021.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E394F6B326EA80C400203BC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E394F6B526EA80C400203BC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		E394F6BC26EA80D300203BC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E394F6BF26EA80D300203BC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E394F6C126EA80D300203BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E394F6CA26EA8BC500203BC8 /* AvitoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvitoModel.swift; sourceTree = "<group>"; };
+		E394F6CC26EA8D6500203BC8 /* AvitoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvitoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,42 @@
 			children = (
 				E394F6B326EA80C400203BC8 /* AppDelegate.swift */,
 				E394F6B526EA80C400203BC8 /* SceneDelegate.swift */,
-				E394F6B726EA80C400203BC8 /* ViewController.swift */,
-				E394F6B926EA80C400203BC8 /* Main.storyboard */,
+				E394F6C926EA81C200203BC8 /* Model */,
+				E394F6C726EA819000203BC8 /* View */,
+				E394F6C826EA81A800203BC8 /* Controller */,
 				E394F6BC26EA80D300203BC8 /* Assets.xcassets */,
 				E394F6BE26EA80D300203BC8 /* LaunchScreen.storyboard */,
 				E394F6C126EA80D300203BC8 /* Info.plist */,
 			);
 			path = "Avito-ios-trainee-problem-2021";
+			sourceTree = "<group>";
+		};
+		E394F6C726EA819000203BC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E394F6B926EA80C400203BC8 /* Main.storyboard */,
+				E38864B926EA90F100C01195 /* EmployeeCell.swift */,
+				E38864BA26EA90F100C01195 /* EmployeeCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E394F6C826EA81A800203BC8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E394F6B726EA80C400203BC8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E394F6C926EA81C200203BC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E394F6CA26EA8BC500203BC8 /* AvitoModel.swift */,
+				E394F6CC26EA8D6500203BC8 /* AvitoData.swift */,
+				E38864BD26EA9AE500C01195 /* AvitoManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E394F6C026EA80D300203BC8 /* LaunchScreen.storyboard in Resources */,
+				E38864BC26EA90F100C01195 /* EmployeeCell.xib in Resources */,
 				E394F6BD26EA80D300203BC8 /* Assets.xcassets in Resources */,
 				E394F6BB26EA80C400203BC8 /* Main.storyboard in Resources */,
 			);
@@ -138,8 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E394F6B826EA80C400203BC8 /* ViewController.swift in Sources */,
+				E394F6CD26EA8D6500203BC8 /* AvitoData.swift in Sources */,
 				E394F6B426EA80C400203BC8 /* AppDelegate.swift in Sources */,
+				E38864BB26EA90F100C01195 /* EmployeeCell.swift in Sources */,
+				E38864BE26EA9AE500C01195 /* AvitoManager.swift in Sources */,
 				E394F6B626EA80C400203BC8 /* SceneDelegate.swift in Sources */,
+				E394F6CB26EA8BC500203BC8 /* AvitoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
