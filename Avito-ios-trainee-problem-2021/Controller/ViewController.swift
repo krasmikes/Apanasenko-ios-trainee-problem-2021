@@ -23,6 +23,8 @@ class ViewController: UIViewController, AvitoManagerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         dateFormatter.dateFormat = "dd MMM 'в' HH:mm:ss"
+        companyNameLabel.text = "Обновляется"
+        lastUpdateLabel.isHidden = true
         tableView.dataSource = self
         tableView.register(UINib(nibName: "EmployeeCell", bundle: nil), forCellReuseIdentifier: "EmployeeCell")
         manager.delegate = self
@@ -30,6 +32,8 @@ class ViewController: UIViewController, AvitoManagerDelegate {
         
     }
     @IBAction func refreshPressed(_ sender: UIButton) {
+        companyNameLabel.text = "Обновляется"
+        lastUpdateLabel.isHidden = true
         manager.performRequest()
     }
     
@@ -40,6 +44,7 @@ class ViewController: UIViewController, AvitoManagerDelegate {
         self.model?.sortEmployees()
         DispatchQueue.main.async {
             self.companyNameLabel.text = self.model?.data.company.name
+            self.lastUpdateLabel.isHidden = false
             self.lastUpdateLabel.text = "Последнее обновление: \(self.dateFormatter.string(from: Date()))" 
             self.tableView.reloadData()
         }
